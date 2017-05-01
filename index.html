@@ -262,13 +262,13 @@
       
       /* IMAGE MODAL */
       /* Style the Image Used to Trigger the Modal */
-#myImg {
+.myImg {
     
     cursor: pointer;
     transition: 0.3s;
 }
 
-#myImg:hover {opacity: 0.7;}
+.myImg:hover {opacity: 0.7;}
 
 /* The Modal (background) */
 .modal {
@@ -324,7 +324,7 @@
 }
 
 /* The Close Button */
-.close {
+#close {
     position: absolute;
     top: 15px;
     right: 35px;
@@ -334,8 +334,8 @@
     transition: 0.3s;
 }
 
-.close:hover,
-.close:focus {
+#close:hover,
+#close:focus {
     color: #bbb;
     text-decoration: none;
     cursor: pointer;
@@ -457,21 +457,21 @@
   <div class="row text-center slideanim">
      <div class="col-sm-4">
       <div class="thumbnail">
-        <img src="images/photos/from_the_road.jpg" alt="500m from the camp" width="400" height="300" id="myImg">
+        <img src="images/photos/from_the_road.jpg" alt="500m from the camp" width="400" height="300" class="myImg">
         <p><strong>500m from the camp</strong></p>
         <p>Road to the camp. This advertising board doest exist any more.</p>
       </div>
     </div>
     <div class="col-sm-4">
       <div class="thumbnail">
-        <img src="images/photos/ambient.jpg" alt="Ambient of kamp Romantica" width="400" height="300">
+        <img src="images/photos/ambient.jpg" alt="Ambient of kamp Romantica" width="400" height="300" class="myImg">
         <p><strong>Ambient</strong></p>
         <p>Look at this beautiful nature :)</p>
       </div>
     </div>
     <div class="col-sm-4">
       <div class="thumbnail">
-        <img src="images/photos/near_islands.jpg" alt="islands near autokamp Ronmantica" width="400" height="300">
+        <img src="images/photos/near_islands.jpg" alt="islands near autokamp Ronmantica" width="400" height="300" class="myImg">
         <p><strong>Near Islands</strong></p>
         <p>Clean sea and beautiful near islands.</p>
       </div>
@@ -479,63 +479,63 @@
     <!--	 Možda bi sada trwbao drugi red ići-->
 	 <div class="col-sm-4">
 	  <div class="thumbnail">
-		<img src="images/photos/entrance.jpg" alt="Entrance" width="400" height="300">
+		<img src="images/photos/entrance.jpg" alt="Entrance" width="400" height="300" class="myImg">
 		<p><strong>Entrance</strong></p>
 		<p>As you can see, the camp </p>
 	  </div>
 	 </div>
 	<div class="col-sm-4">
 	  <div class="thumbnail">
-		<img src="images/photos/beach.jpg" alt="The beach" width="400" height="300">
+		<img src="images/photos/beach.jpg" alt="The beach" width="400" height="300" class="myImg">
 		<p><strong>The beach</strong></p>
 		<p>Beach in front of the camp, but near you can find more beaches.</p>
 	  </div>
 	 </div>
 	 <div class="col-sm-4">
 	  <div class="thumbnail">
-		<img src="images/photos/fishermans_boats.jpg" alt="Fisherman's boats" width="400" height="300">
+		<img src="images/photos/fishermans_boats.jpg" alt="Fisherman's boats" width="400" height="300" class="myImg">
 		<p><strong>Fisherman's boats</strong></p>
 		<p>You can by fresh fish of them and some of them are renting a boat.</p>
 	  </div>
 	 </div>
 	 <div class="col-sm-4">
 	  <div class="thumbnail">
-		<img src="images/photos/front_view.jpg" alt="front view on autokamp Romantica" width="400" height="300">
+		<img src="images/photos/front_view.jpg" alt="front view on autokamp Romantica" width="400" height="300" class="myImg">
 		<p><strong>Front view on Romantica</strong></p>
 		<p></p>
 	  </div>
 	 </div>
  	<div class="col-sm-4">
 	  <div class="thumbnail">
-		<img src="images/photos/surrounding.jpg" alt="Surrounding" width="400" height="300">
+		<img src="images/photos/surrounding.jpg" alt="Surrounding" width="400" height="300" class="myImg">
 		<p><strong>Surrounding</strong></p>
 		<p>Other autocamps.</p>
 	  </div>
 	 </div>
 	 <div class="col-sm-4">
 	  <div class="thumbnail">
-		<img src="images/photos/top.jpg" alt="Top of the autocamp Romantica" width="400" height="300">
+		<img src="images/photos/top.jpg" alt="Top of the autocamp Romantica" width="400" height="300" class="myImg">
 		<p><strong>Top of the camp</strong></p>
 		<p>Better view, quiet ambient, but no protection of the sun.</p>
 	  </div>
 	 </div>
 	 <div class="col-sm-4">
 	  <div class="thumbnail">
-		<img src="images/photos/middle_pitches.jpg" alt="middle pitches of autocamp Romantica" width="400" height="300">
+		<img src="images/photos/middle_pitches.jpg" alt="middle pitches of autocamp Romantica" width="400" height="300" class="myImg">
 		<p><strong>Middle pitches</strong></p>
 		<p>Higher trees, more shadow.</p>
 	  </div>
 	 </div>
 	 <div class="col-sm-4">
 	  <div class="thumbnail">
-		<img src="images/photos/main_road.jpg" alt="central road in autokamp Romantika" width="400" height="300">
+		<img src="images/photos/main_road.jpg" alt="central road in autokamp Romantika" width="400" height="300" class="myImg">
 		<p><strong>Main road in camp</strong></p>
 		<p>You can also see some pitches close to the sea.</p>
 	  </div>
 	 </div>
 	 <div class="col-sm-4">
 	  <div class="thumbnail">
-		<img src="images/photos/reception.jpg" alt="Reception of autokamp Romantika" width="400" height="300">
+		<img src="images/photos/reception.jpg" alt="Reception of autokamp Romantika" width="400" height="300" class="myImg">
 		<p><strong>Reception</strong></p>
 		<p>Inside you can find fridgerators, grill and kitchen.</p>
 	  </div>
@@ -580,7 +580,7 @@
 <div id="myModal" class="modal">
 
   <!-- The Close Button -->
-  <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+  <span id="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
 
   <!-- Modal Content (The Image) -->
   <img class="modal-content" id="img01">
@@ -818,18 +818,19 @@ $(document).ready(function(){
 var modal = document.getElementById('myModal');
 
 // Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.getElementById('myImg');
+
 var modalImg = document.getElementById("img01");
 var captionText = document.getElementById("caption");
-img.onclick = function(){
-    $('.navbar').hide();
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
-}
+    $('.myImg').on('click', function(){
+        $('.navbar').hide();
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+    });
+
 
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+var span = document.getElementById("close");
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() { 
