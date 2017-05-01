@@ -259,6 +259,94 @@
         display:block !important;
     }  
       }
+      
+      /* IMAGE MODAL */
+      /* Style the Image Used to Trigger the Modal */
+.myImg {
+    
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption { 
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+#close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+#close:hover,
+#close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
   </style>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
@@ -369,21 +457,21 @@
   <div class="row text-center slideanim">
      <div class="col-sm-4">
       <div class="thumbnail">
-        <img src="images/photos/from_the_road.jpg" alt="500m from the camp" width="400" height="300">
+        <img src="images/photos/from_the_road.jpg" alt="500m from the camp" width="400" height="300" class="myImg">
         <p><strong>500m from the camp</strong></p>
         <p>Road to the camp. This advertising board doest exist any more.</p>
       </div>
     </div>
     <div class="col-sm-4">
       <div class="thumbnail">
-        <img src="images/photos/ambient.jpg" alt="Ambient of kamp Romantica" width="400" height="300">
+        <img src="images/photos/ambient.jpg" alt="Ambient of kamp Romantica" width="400" height="300" class="myImg">
         <p><strong>Ambient</strong></p>
         <p>Look at this beautiful nature :)</p>
       </div>
     </div>
     <div class="col-sm-4">
       <div class="thumbnail">
-        <img src="images/photos/near_islands.jpg" alt="islands near autokamp Ronmantica" width="400" height="300">
+        <img src="images/photos/near_islands.jpg" alt="islands near autokamp Ronmantica" width="400" height="300" class="myImg">
         <p><strong>Near Islands</strong></p>
         <p>Clean sea and beautiful near islands.</p>
       </div>
@@ -391,63 +479,63 @@
     <!--	 Možda bi sada trwbao drugi red ići-->
 	 <div class="col-sm-4">
 	  <div class="thumbnail">
-		<img src="images/photos/entrance.jpg" alt="Entrance" width="400" height="300">
+		<img src="images/photos/entrance.jpg" alt="Entrance" width="400" height="300" class="myImg">
 		<p><strong>Entrance</strong></p>
 		<p>As you can see, the camp </p>
 	  </div>
 	 </div>
 	<div class="col-sm-4">
 	  <div class="thumbnail">
-		<img src="images/photos/beach.jpg" alt="The beach" width="400" height="300">
+		<img src="images/photos/beach.jpg" alt="The beach" width="400" height="300" class="myImg">
 		<p><strong>The beach</strong></p>
 		<p>Beach in front of the camp, but near you can find more beaches.</p>
 	  </div>
 	 </div>
 	 <div class="col-sm-4">
 	  <div class="thumbnail">
-		<img src="images/photos/fishermans_boats.jpg" alt="Fisherman's boats" width="400" height="300">
+		<img src="images/photos/fishermans_boats.jpg" alt="Fisherman's boats" width="400" height="300" class="myImg">
 		<p><strong>Fisherman's boats</strong></p>
 		<p>You can by fresh fish of them and some of them are renting a boat.</p>
 	  </div>
 	 </div>
 	 <div class="col-sm-4">
 	  <div class="thumbnail">
-		<img src="images/photos/front_view.jpg" alt="front view on autokamp Romantica" width="400" height="300">
+		<img src="images/photos/front_view.jpg" alt="front view on autokamp Romantica" width="400" height="300" class="myImg">
 		<p><strong>Front view on Romantica</strong></p>
 		<p></p>
 	  </div>
 	 </div>
  	<div class="col-sm-4">
 	  <div class="thumbnail">
-		<img src="images/photos/surrounding.jpg" alt="Surrounding" width="400" height="300">
+		<img src="images/photos/surrounding.jpg" alt="Surrounding" width="400" height="300" class="myImg">
 		<p><strong>Surrounding</strong></p>
 		<p>Other autocamps.</p>
 	  </div>
 	 </div>
 	 <div class="col-sm-4">
 	  <div class="thumbnail">
-		<img src="images/photos/top.jpg" alt="Top of the autocamp Romantica" width="400" height="300">
+		<img src="images/photos/top.jpg" alt="Top of the autocamp Romantica" width="400" height="300" class="myImg">
 		<p><strong>Top of the camp</strong></p>
 		<p>Better view, quiet ambient, but no protection of the sun.</p>
 	  </div>
 	 </div>
 	 <div class="col-sm-4">
 	  <div class="thumbnail">
-		<img src="images/photos/middle_pitches.jpg" alt="middle pitches of autocamp Romantica" width="400" height="300">
+		<img src="images/photos/middle_pitches.jpg" alt="middle pitches of autocamp Romantica" width="400" height="300" class="myImg">
 		<p><strong>Middle pitches</strong></p>
 		<p>Higher trees, more shadow.</p>
 	  </div>
 	 </div>
 	 <div class="col-sm-4">
 	  <div class="thumbnail">
-		<img src="images/photos/main_road.jpg" alt="central road in autokamp Romantika" width="400" height="300">
+		<img src="images/photos/main_road.jpg" alt="central road in autokamp Romantika" width="400" height="300" class="myImg">
 		<p><strong>Main road in camp</strong></p>
 		<p>You can also see some pitches close to the sea.</p>
 	  </div>
 	 </div>
 	 <div class="col-sm-4">
 	  <div class="thumbnail">
-		<img src="images/photos/reception.jpg" alt="Reception of autokamp Romantika" width="400" height="300">
+		<img src="images/photos/reception.jpg" alt="Reception of autokamp Romantika" width="400" height="300" class="myImg">
 		<p><strong>Reception</strong></p>
 		<p>Inside you can find fridgerators, grill and kitchen.</p>
 	  </div>
@@ -486,6 +574,19 @@
       <span class="sr-only">Next</span>
     </a>
   </div>-->
+</div>
+    
+    <!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- The Close Button -->
+  <span id="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+
+  <!-- Modal Content (The Image) -->
+  <img class="modal-content" id="img01">
+
+  <!-- Modal Caption (Image Text) -->
+  <div id="caption"></div>
 </div>
 
 <!-- Container (About Section) -->
@@ -713,7 +814,29 @@ $(document).ready(function(){
     });
   });
     
-    
+  // Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+    $('.myImg').on('click', function(){
+        $('.navbar').hide();
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+    });
+
+
+// Get the <span> element that closes the modal
+var span = document.getElementById("close");
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+    $('.navbar').show();
+}
 });
 </script>
 
